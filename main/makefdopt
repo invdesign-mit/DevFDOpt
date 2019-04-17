@@ -1,0 +1,10 @@
+cd ../library/
+bash makelib
+
+cd ../main/
+rm -rf *.h
+ln -s ../library/*.h ./
+#ln -s ~/nlopt-2.4.2/include/nlopt.h ./
+make clean
+make
+make clean
